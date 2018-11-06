@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#491853</color>
+    <color name="colorPrimaryDark">#112b3d</color>
+    <color name="colorAccent">#8c207c</color>
+    <color name="boton">#8c207c</color>
+    <color name="texto">#fff</color>
+    <color name="rojo">#ef5350</color>
+</resources>

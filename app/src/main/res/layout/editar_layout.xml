@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient2">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titulo"
+                />
+            <EditText
+                android:id="@+id/editTitulo"
+                android:layout_below="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tarea del lunes..."/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hora"/>
+            <EditText
+                android:id="@+id/horatxt"
+                android:layout_below="@+id/hora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:focusable="false"
+                android:hint="22:00"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha"/>
+            <EditText
+                android:id="@+id/fechatxt"
+                android:layout_below="@+id/fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:focusable="false"
+                android:hint="31/12/18"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripcion"/>
+            <EditText
+                android:id="@+id/descripcion"
+                android:layout_below="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="5"
+                android:hint="Hacer tarea de programacion..."/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:background="@color/colorPrimary"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Editar"
+            android:textColor="#fff"
+            android:onClick="actualizarDatos"/>
+    </FrameLayout>
+
+</RelativeLayout>
